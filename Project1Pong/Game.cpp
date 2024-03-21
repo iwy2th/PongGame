@@ -57,7 +57,7 @@ void Game::UpdateGame() {
 	mBallPos.x += mBallVel.x * deltaTime;
 	mBallPos.y += mBallVel.y * deltaTime;
 	cout << mBallVel.y << endl;
-	// Check ball collide with top wall 
+	// Check ball collide with wall 
 	if (mBallPos.y <= thickness + thickness / 2  && mBallVel.y < 0.0f)
 	{
 		mBallVel.y *= -1.0f;
